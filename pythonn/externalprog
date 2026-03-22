@@ -1,0 +1,650 @@
+[4:41 pm, 22/3/2026] YASH PAWAR: #Python Program for Exception Handling Mechanism (Basic Exceptions)
+
+try:
+
+a= int(input('Enter Nuerator of division'))
+
+b= int (input('Enter Dnominator of Division'))
+
+print('result of integer division=',a/b)
+
+except BaseException as msg:
+
+print(msg)
+
+print('Type of Exeption', type(msg))
+
+Enter Nuerator of division 10 Enter Dnominator of Division2
+
+result of integer division= 5.0
+
+Enter Nuerator of division 10 Enter Dnominator of Divisiontwo
+
+invalid literal for int() with base 10: 'two'
+
+Type of Exeption <class 'ValueError'>
+
+#Python Program Exception Handling Value Error
+
+while True:
+
+try:
+
+val = input('Enter an integer value')
+
+val= int(val)
+
+print('The square of the entered number is', val**2)
+
+break
+
+except ValueError:
+
+print(val + ' is not an integer')…
+[4:41 pm, 22/3/2026] YASH PAWAR: #Python Program for Exception Handling Mechanism (Basic Exceptions)
+
+try:
+
+a= int(input('Enter Nuerator of division'))
+
+b= int (input('Enter Dnominator of Division'))
+
+print('result of integer division=',a/b)
+
+except BaseException as msg:
+
+print(msg)
+
+print('Type of Exeption', type(msg))
+
+Enter Nuerator of division 10 Enter Dnominator of Division2
+
+result of integer division= 5.0
+
+Enter Nuerator of division 10 Enter Dnominator of Divisiontwo
+
+invalid literal for int() with base 10: 'two'
+
+Type of Exeption <class 'ValueError'>
+
+#Python Program Exception Handling Value Error
+
+while True:
+
+try:
+
+val = input('Enter an integer value')
+
+val= int(val)
+
+print('The square of the entered number is', val**2)
+
+break
+
+except ValueError:
+
+print(val + ' is not an integer')
+
+Enter an integer value ten
+
+ten is not an integer
+
+Enter an integer values The square of the entered number is 25
+
+
+#Python Program Exception Handling (key and index Error)
+
+my_dict={"a": 1, "b":2, "c":3}
+
+try:
+
+value = my_dict["c"]
+
+print(value)
+
+value = my_dict["d"]
+
+except KeyError:
+
+print("The key does not exist!")
+
+my_list = [1, 2, 3, 4, 5]
+
+try:
+
+print(my_list[3])
+
+my_list(5
+
+except IndexError:
+
+3
+
+print("That index is not in the list!")
+
+The key does not exist!
+
+4
+
+That index is not in the list!
+
+#Python Program for Else and Finally Clause
+
+try:
+
+x= int(input('enter value of x'))
+
+y= int(input('enter value of y'))
+
+result = x // y
+
+except ZeroDivisionError:
+
+print("You are dividing by zero ")
+
+else:
+
+print("Your answer is :", result)
+
+finally:
+
+print('This is always executed')
+
+
+
+#Python Program for classes and objects
+
+class student:
+
+stucount=0
+
+def_init__(self,name, subject, age):
+
+self.name-name
+
+self.subject subject
+
+self.age-age
+
+student.stucount+=1
+
+def displayCount(self):
+
+print("total student count=%d"%student.stucount)
+
+def displayStudent(self):
+
+print("Name:", self.name, ", Subject:", self.subject,", Age:", self.age)
+
+$1= student("RAJAN", "COMPUTER", 18)
+
+s2= student("LEENA", "Python",19)
+
+$3=student("SHREEYASH", "RDBMS",20)
+
+s4=student("SAYALI", "NETWORK", 19)
+
+s5=student("MANOHAR", "TCS",21)
+
+s1.displayCount()
+
+s1.displayStudent()
+
+s2.displayStudent
+
+s3.displayStudent()
+
+s4.displayStudent()
+
+s5.displayStudent()
+
+print("Accessing and setting attributes")
+
+print(hasattr(s1,'age'))
+
+print(getattr(s1,'age'))
+
+setattr(s3,'age',23)
+
+s3.displayStudent()
+
+print("Built-in attributes of Class")
+
+print("student. doc :", student.doc)
+
+print("student. module:", student.module)
+
+print("student. bases:", student.bases)
+
+print("student.dict:",student._dict)
+
+
+
+
+#Python Program for Method Overloading
+
+class area_compute:
+
+def area(self,x=None,y=None): if x! None and y!=None:
+
+return x*y
+
+elif x! None:
+
+return xx
+
+else:
+
+return 0
+
+al area_compute()
+
+print(" Area=",al.area())
+
+print("area",al.area(5))
+
+print("area",al.area(4,5)
+
+#Python Program for operator overloading
+
+# overloading binary operator
+
+class binary:
+
+def _init_(self,x): self.x=x
+
+def_add__(self,obj):
+
+#Binary operator overloading
+
+return self.x + obj.x
+
+C
+
+deflt__(self,other): if(self.x < other.x): # lessthan operator return 'object¹ is less than object2'
+
+U
+
+G
+
+else:
+
+return 'object2 <object1'
+
+Pr
+
+def_eq_(self,other): #equality operator
+
+if(self.x other.x): return 'object¹ is equal to object 2'
+
+Pre
+
+else:
+
+Re
+
+return 'object1 is not equal to object 2'
+
+Lat
+
+ol=binary(10)
+
+02-binary(20)
+
+print(01+02)
+
+print(002)
+
+03=binary(40)
+
+04-binary(40)
+
+print(03-04)
+
+
+
+
+
+#Python Program for Multilevel inheritance
+
+class college:
+
+def college_name(self):
+
+print("R.C.Patel Arts,commerce and Science college")
+
+class department(college): #department class inherited from college
+
+dept_name=""
+
+def department_info(self):
+
+class name=""
+
+print(self.dept_name)
+
+print(self.class_name)
+
+print(self.students_enrolled)
+
+class TYBSC(department):
+
+#TYBSC class inherited from department and student
+
+def stud info(self):
+
+print("Department:", self.dept_name)
+
+print("class:", self.class_name)
+
+s1 =TYBSC()
+
+print("No.of Student Enrolled:", self.students_enrolled)
+
+s1.dept_name="department of computer science"
+
+s1.class_name='T.Y.B.Sc."
+
+s1.students_enrolled='235"
+
+s1.college_name()
+
+s1.stud_info()
+
+#Python Program for Multiple inheritance
+
+class one:
+
+def add(self, x,y):
+
+class two:
+
+return x + y
+
+def mult(self,x,y):
+
+class three:
+
+def div(self,x,y):
+
+return x*y
+
+class four:
+
+return x / y
+
+def sub(self,x,y):
+
+return x-y
+
+#class arithmetic is inherited from 4 classes
+
+class arithmatic(one, two, three, four):
+
+def mod(self,x,y):
+
+print("Arithmatic Calculations:")
+
+al-arithmatic()
+
+return x%y
+
+print("Addition:",al.add(12,10))
+
+print("substraction:",al/sub(12,7))
+
+print("Multiplication,al.mult(5,6))
+
+print("Division:",ay.div(10,2))
+
+Ali
+
+print("Modulus:"al.mod(15,4))
+
+
+
+#Python program for GUI Programming widgets
+
+#Python Program for tkinter demo
+
+from tkinter import
+
+main Window-Tk()
+
+main Window.title("Tkinter Demo")
+
+lbl-Label(main Window,text "Hello Students",font=("Arial",20), bg="BLUE")
+
+Ibl.pack()
+
+main Window.loop()
+
+Narr
+
+Exp
+
+Pert
+
+Aim
+
+#Python Program for demonstration of Radio buttons
+
+Appa
+
+from tkinter import*
+
+Form
+
+main Window=Tk()
+
+Incor
+
+mainWindow.title("radio Button demo")
+
+Diag
+
+Obs
+
+lbl-Label(main Window,text="select Gender")
+
+lbl.pack()
+
+v=StringVar(main Window,"l")
+
+Calc
+
+options={"Male":"M",
+
+"Female":"F",
+
+Unit
+
+"Other":"0"}
+
+Gra
+
+for(txt,val)in options.items():
+
+Radiobutton(mainWindow, text=(xt, variable=v,value=val).pack(side=TOP,ipady=3)
+
+Pro
+
+Button(mainWindow,text="print,command=lambda:print(v.get())).pack()
+mainWindow.loop()
+
+
+
+
+
+
+#Practicals Based on Regular Expressions
+
+#Program to Validate mobile number(Mobile number must be of 10 digits and starts with 7,8,9 digits
+
+import re
+
+mobile_no=int(input("enter a Mobile#"))
+
+m=str(mobile_no)
+
+result =re.match(r'[7-9]{1}[0-9]{9}m)
+
+if result! None:
+
+else:
+
+print('Valid Mobile number')
+
+print('Invalid mobile numbewr')
+
+#program to validate E-mail-id
+
+import re
+
+email = input('enter E-mail-id')
+
+regex="^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$"
+
+result-re.search(regex, email)
+
+if result! None:
+
+print('valid E-mail-id')
+
+else:
+
+print('Invalid E-mail-id')
+
+enter a Mobile#7588906022
+
+Valid Mobile number
+
+enter E-mail-idrcp.tybsc@gmail.com
+
+valid E-mail-id
+
+
+
+
+
+
+#Python Program for writing and reading file
+
+my_file=open("test.txt","w")
+
+list1=["Bhushan ","Ramesh ","sagar ","Abhinav ","Suresh ","Ravi "," Ganesh "]
+
+if my_file.writable():
+
+my_file.writelines(list1)
+
+print("All lines are writen to test.txt")
+
+else:
+
+print("Fail to Write data in given file")
+
+print("File_name:",my_file.name)
+
+print("File_mode:",my_file.mode)
+
+print("File closed/Not:",my_file.closed)
+
+my_file.close()
+
+print("File closed/Not:",myfile.closed)
+
+my_file=open("test.txt","r")
+
+str1=my_file.readlines(
+
+if str1!="":
+
+for line in strl:
+
+print(line.split())
+
+else:
+
+print("EOF-empty String")
+
+my_file.close()
+
+All lines are writen to test.txt
+
+File_name: test.txt
+
+File mode: w
+
+File closed/Not:
+
+False
+
+File closed/Not: True
+
+['Bhushan', 'Ramesh', 'sagar', 'Abhinav', 'Suresh', 'Ravi', 'Ganesh']
+
+
+
+
+#Programs to remove and rename created existing file
+
+#program to remove file
+
+import os
+
+my_file=open("my_file.txt","w")
+
+my_file.write(" We are implementing os.remove()")
+
+print("Succesfully created text file")
+
+my_file.close()
+
+try:
+
+list-os.listdir()
+
+print("File or directory:", list)
+
+os.remove("my_file.txt")
+
+print("Successfully removing file")
+
+list-os.listdir()
+
+print("File or directory", list)
+
+except FileNotFoundError
+
+print("File doesnot exist")
+
+#program to rename file
+
+import os
+
+my_file=open("python1.txt","w")
+
+my_file.write("we are working with files and directories")
+
+print("Succesfully created text file")
+
+my_file.close()
+
+try:
+
+list-os.listdir()
+
+print("File or directory:", list)
+
+os.rename("python1.txt","file1.txt")
+
+print("Successfully rename old file with new file")
+
+list-os.listdir()
+
+print("File or directory:", list)
+
+except FileNotFoundError:
+
+print("File doesnot exist")
